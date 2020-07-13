@@ -1,0 +1,132 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  z-index: 2;
+  background-color:rgb(242, 242, 242);
+  font-family: 'Raleway', sans-serif;
+  height: fit-content;
+}
+
+.banner h1 {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 3em;
+}
+
+.banner h1:hover {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 800;
+  font-size: 3em;
+  color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+.banner label {
+  display: inline-block;
+  width: 17vw;
+  text-align: right;
+  margin-right: 10px;
+}
+
+
+.banner-info {
+  margin: 5px 0px 5px 0px;
+  text-align: center;
+}
+
+.submit-button {
+  margin-left: 42%;
+  width: 15vw;
+}
+
+input[type="submit"]:hover {
+box-shadow: 0px 0px 5px 5px pink;
+}
+
+.meme {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px 20px 10px 20px;
+  align-self: center;
+}
+
+.text {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-size: 2.5em;
+  font-weight: 800;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  left: 5px;
+  right: 5px;
+  word-wrap: break-word;
+}
+
+#top {
+  top: 10px;
+}
+
+#bottom {
+  bottom: 10px;
+}
+
+.memeImage{
+  display: block;
+  border-radius: 5px;
+  max-width: 550px;
+  min-width: 400px;
+}
+
+.meme:hover {
+  opacity: 0.6;
+}
+
+.meme:hover .delete {
+  opacity: 1;
+}
+
+.delete {
+  opacity: 0;
+  background-color: rgba(200, 200, 200, 0.7);
+  border: none;
+  position: absolute;
+  z-index: 2;
+  width: fit-content; 
+  top: 40%;
+  left: 45%;
+}
+
+.delete img{ 
+  width: 45px;
+}
+
+.scroll-up {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border: none;
+  background-color: transparent;
+}
+
+form input {
+  width: 70vw;
+  height: 4vh;
+  margin-top: 10px;
+}
+
+#meme-collection {
+  background-color: whitesmoke;
+  display: inline-block;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px 60px 10px 60px;
+  width: auto;
+}

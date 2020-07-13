@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div>
+      <h1>Meme Me</h1>
+    </div>
+    <div>
+      <div>Put in an image URL, a top and bottom text, then submit!</div>
+    </div>
+    <div>
+      <form>
+        <label for="imageURL">Image URL</label>
+        <input type="text" name="imageURL" id="imageURL"><br>
+        <label for="topText">Top Text</label>
+        <input type="text" name="topText" id="topText"><br>
+        <label for="bottomText">Bottom Text</label>
+        <input type="text" name="bottomText" id="bottomText"><br>
+        <input class="submit-button" type="submit" value="Generate">
+      </form>
+      <br>
+    </div>
+  </header>
+  <section>
+    <div id="meme-collection">
+      <!-- This is where the images will be appended to -->
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/redux"></script>
+  <script src="./meme-generator.js"></script>
+</body>
+
+</html>
